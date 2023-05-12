@@ -1,0 +1,13 @@
+### Xpool
+使用Golang开发的协程池
+
+#### 思想
+使用sync.pool实现任务添加、任务执行pool，使用go进行协程处理
+
+#### 使用方法
+
+```go
+Go(func() {
+    fmt.Printf("xpool %d\n", 123)
+})
+```
