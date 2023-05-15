@@ -9,9 +9,8 @@ import (
 func TestGo(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		Go(func() {
-			fmt.Printf("xpool %d\n", i)
+			fmt.Printf("xpool %d\n", time.Now().UnixNano())
 		})
-		time.Sleep(time.Duration(1) * time.Second)
 	}
 	select {}
 }
