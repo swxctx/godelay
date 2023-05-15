@@ -1,4 +1,4 @@
-package xpool
+package godelay
 
 import (
 	"math"

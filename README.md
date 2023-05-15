@@ -1,2 +1,13 @@
-# godelay
-Golang延迟执行封装，实现延迟执行简单操作。
+### Xpool
+使用Golang开发的协程池
+
+#### 思想
+使用sync.pool实现任务添加、任务执行pool，使用Go协程进行处理
+
+#### 使用方法
+
+```go
+Go(func() {
+    fmt.Printf("xpool %d\n", 123)
+})
+```
